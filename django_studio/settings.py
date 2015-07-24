@@ -22,14 +22,14 @@ SECRET_KEY = '8@%$2*v99m^p4m%x%gl14yb%m*$u_t86(1a-kfxwzw5prln69a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
 # Comma correctly in place.
 TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), 'templates').replace('\\','/'),
 )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition

@@ -2,6 +2,7 @@ from django.conf.urls import patterns, include, url
 
 from django.contrib import admin
 from django_studio.views import current_datetime
+from books import views
 
 admin.autodiscover()
 
@@ -12,4 +13,7 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^current_datetime/', current_datetime),
+    url(r'^search/$', views.search),
+    url(r'^contact/$', views.contact),
+    
 )
